@@ -1,0 +1,46 @@
+# Reaxor
+
+_Boilerplate for better state management, stylying, testing and cleaner code_
+
+
+## React powered by:
+* **Webpack**: Development and Production ready (https://webpack.github.io/)
+* **Babel**: Configured to work with React, ES7 and React Hot Loader 3! (https://babeljs.io/)
+* **MobX**: The best state management for React :heart_eyes: (https://mobxjs.github.io/mobx/)
+* **Flow**: Type Checker for Javascript (http://flowtype.org/)
+* **ESLint**: Configured to work with React (http://eslint.org)
+* **Aphrodite**: Inline Styles that work (https://github.com/Khan/aphrodite)
+* **Jest**: Painless Javascript unit testing (https://facebook.github.io/jest/)
+* **React Hot Loader 3**: Hot Loader for stateless components (https://github.com/gaearon/react-hot-boilerplate/pull/61)
+
+## Installation
+```
+git clone https://github.com/KadoBOT/reaxxor
+npm install
+```
+## Usage
+Development Build:  ``npm start``  
+Production Build: ``npm run build``  
+Testing: ``npm test``  
+Lint checking: ``npm run lint``  
+Flow testing:  ``npm run flow``  
+## Folder Structure
+```
+..root
+|--src
+	|--components
+		|--Component 1 //Each component have their own folder since they hold individual tests and styles
+    		|--__tests__ //Jest detects folders named this way
+           		App-test.js //Jest test file.
+            App.js //Component file
+            style.css.js //Aphrodite CSS/JS File
+        |--Component 2
+    |--stores
+        Store.js //MobX Store for State Management
+    index.js
+```
+## Outros
+Since this is a boilerplate, I won't go deeper on how to use it's features (ie. how to use MobX , Aphrodite or Jest), but you can find pre-configured files inside this project that uses them, so you can get a taste of it. If you want to learn more about them and how to use it, you can click on the links on the top of this page near each package name and description.  
+## Contributing
+* Send pull requests, I love them!
+* Be sure to run the tests provided in this repo before sending the pull requests.
