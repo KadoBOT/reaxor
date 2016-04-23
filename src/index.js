@@ -7,7 +7,7 @@ import App from './components/App/App';
 
 const store = new Store();
 
-if(process.env.NODE_ENV === 'development'){
+if(process.env.NODE_ENV === 'development') {
   a11y(React);
 }
 
