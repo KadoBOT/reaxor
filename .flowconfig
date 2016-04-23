@@ -1,2 +1,5 @@
 [ignore]
 <PROJECT_ROOT>/node_modules/fbjs/.*
+<PROJECT_ROOT>/node_modules/json5/.*
+[options]
+esproposal.decorators=ignore
