@@ -15,7 +15,7 @@ _Boilerplate for better state management, styling, testing and cleaner code_
 
 ## Installation
 ```
-git clone https://github.com/KadoBOT/reaxxor
+git clone https://github.com/KadoBOT/reaxxor.git
 npm install
 ```
 ## Usage
