@@ -1,6 +1,6 @@
 # Reaxor
 
-_Boilerplate for better state management, stylying, testing and cleaner code_
+_Boilerplate for better state management, styling, testing and cleaner code_
 
 
 ## React powered by:
