@@ -1,4 +1,4 @@
-jest.unmock('./components/App');
+jest.unmock('../components/App');
 
 import React from 'react';
 // import ReactDOM from 'react-dom';
