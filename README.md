@@ -1,3 +1,5 @@
+> Right now, animation on Aphrodite is not working, unless you copy the files from their Github, and imports aphrodite.js explicity. Will wait for it to be fixed, before pushing this to master. Also, I've made some changes on folder structure, so you can re-utilize css files and tests.
+
 # Reaxor
 
 _Boilerplate for better state management, styling, testing and cleaner code_
