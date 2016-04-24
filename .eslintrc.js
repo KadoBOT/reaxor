@@ -72,7 +72,6 @@ module.exports = {
     "react/jsx-no-duplicate-props": 1,
     "react/jsx-no-undef": 1,
     "react/jsx-pascal-case": 1,
-    "react/jsx-sort-prop-types": 1,
     "react/jsx-sort-props": 1,
     "react/jsx-uses-react": 1,
     "react/jsx-uses-vars": 1,
@@ -89,6 +88,7 @@ module.exports = {
     "react/require-extension": 1,
     "react/self-closing-comp": 1,
     "react/sort-comp": 1,
+    "react/sort-prop-types": 1,
     "react/wrap-multilines": 1,
   }
 }

@@ -1,4 +1,6 @@
 import React from 'react';
+import { css } from '../../node_modules/aphrodite/dist/aphrodite.js';
+import {styles} from '../styles/styles.css';
 import { observer } from 'mobx-react';
 
 const MyComponent = ({ store }) => {
@@ -7,12 +9,12 @@ const MyComponent = ({ store }) => {
     <div>
       <button
         onClick={clickButton}
-        type="button"
+        type='button'
       >
         Click me!
       </button>
       <h4>You've clicked the button {store.numClicks} times!</h4>
-      <h5>You've clicked button an {store.oddOrEven} number of times.</h5>
+      <h5>You've clicked button an <span className={css(styles[store.oddOrEven])}>{store.oddOrEven}</span> number of times.</h5>
     </div>
   );
 }
