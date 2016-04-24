@@ -3,7 +3,7 @@ jest.unmock('./components/App');
 import React from 'react';
 // import ReactDOM from 'react-dom';
 import TestUtils from 'react-addons-test-utils';
-import App from './components/App';
+import App from '../components/App';
 
 const storeProp = {
   name: 'Reaxor',
