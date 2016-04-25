@@ -1,5 +1,5 @@
 import React from 'react';
-import { css } from '../../node_modules/aphrodite/dist/aphrodite.js';
+import { css } from 'aphrodite/dist/aphrodite';
 import {styles} from '../styles/styles.css';
 import { observer } from 'mobx-react';
 

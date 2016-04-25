@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { observer } from 'mobx-react';
-import { css } from '../../node_modules/aphrodite/dist/aphrodite.js';
+import { css } from 'aphrodite/dist/aphrodite';
 import {styles} from '../styles/styles.css';
 import MyComponent from './MyComponent';
 
@@ -15,7 +15,7 @@ class App extends React.Component {
     return (
       <div>
         <h2 className={css(styles.red)}>Name: {store.name}</h2>
-        <h3 className={css(styles.animate)}>Description: {store.description}.</h3>
+        <h3 className={css(styles.animate)}>Description: {store.description}</h3>
         <MyComponent store={store} />
       </div>
     );

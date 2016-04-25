@@ -1,4 +1,4 @@
-import { StyleSheet } from '../../node_modules/aphrodite/dist/aphrodite.js';
+import { StyleSheet } from 'aphrodite';
 
 const keyframes = {
   '0%': {fontSize: 12},
