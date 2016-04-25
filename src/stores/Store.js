@@ -1,8 +1,8 @@
 import { observable, computed } from 'mobx';
 
 class Store {
-  name = 'Reaxor Store';
-  description = 'Hello World';
+  name = 'Reaxor';
+  description = 'React boilerplate for better state management, styling, testing and cleaner code';
   @observable numClicks = 0;
 
   @computed get oddOrEven () {

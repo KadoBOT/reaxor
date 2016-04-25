@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 import a11y  from 'react-a11y'
 import Store from './stores/Store';
-import App from './components/App/App';
+import App from './components/App';
 
 const store = new Store();
 
@@ -20,10 +20,10 @@ render(
 );
 
 if (module.hot) {
-  module.hot.accept('./components/App/App', () => {
+  module.hot.accept('./components/App', () => {
     render(
       <AppContainer
-        component={require('./components/App/App').default}
+        component={require('./components/App').default}
         props={{ store }}
       />,
       document.getElementById('root')

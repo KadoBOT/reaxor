@@ -1,9 +1,9 @@
-jest.unmock('../App');
+jest.unmock('../components/App');
 
 import React from 'react';
 // import ReactDOM from 'react-dom';
 import TestUtils from 'react-addons-test-utils';
-import App from '../App';
+import App from '../components/App';
 
 const storeProp = {
   name: 'Reaxor',
@@ -20,8 +20,8 @@ describe('App', () => {
     const h2 = TestUtils.findRenderedDOMComponentWithTag(app, 'h2')
     const h3 = TestUtils.findRenderedDOMComponentWithTag(app, 'h3')
 
-    expect(h2.textContent).toEqual('Welcome to the Reaxor project!');
-    expect(h3.textContent).toEqual('This project is Hello.')
+    expect(h2.textContent).toEqual('Name: Reaxor');
+    expect(h3.textContent).toEqual('Description: Hello')
 
     jest.runAllTimers()
   });
