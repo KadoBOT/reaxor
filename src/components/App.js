@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { observer } from 'mobx-react';
-import { css } from 'aphrodite/dist/aphrodite';
+import { css } from 'aphrodite';
 import {styles} from '../styles/styles.css';
 import MyComponent from './MyComponent';
 
