@@ -10,7 +10,7 @@ import MyComponent from './MyComponent'
 class App extends React.Component {
   render() {
 
-    const { store } = this.props
+    const { store } = this.props.store
 
     return (
       <div>

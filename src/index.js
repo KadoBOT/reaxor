@@ -12,21 +12,19 @@ if(process.env.NODE_ENV === 'development') {
 }
 
 render(
-  <AppContainer
-    component={App}
-    props={{ store }}
-  />,
+  <AppContainer>
+    <App store={{ store }} />
+  </AppContainer>,
   document.getElementById('root')
 )
 
-// if (module.hot) {
-//   module.hot.accept('./components/App', () => {
-//     render(
-//       <AppContainer
-//         component={require('./components/App').default}
-//         props={{ store }}
-//       />,
-//       document.getElementById('root')
-//     )
-//   })
-// }
+if (module.hot) {
+  module.hot.accept('./components/App', () => {
+    render(
+      <AppContainer>
+        <App store={{ store }} />
+      </AppContainer>,
+      document.getElementById('root')
+    )
+  })
+}

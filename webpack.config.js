@@ -41,7 +41,7 @@ if (TARGET === 'start' || !TARGET) {
     },
     module: {
       loaders: [
-        { test: /\.js$/, exclude: /node_modules/, loaders: ['babel?cacheDirectory', 'eslint-loader'], include: path.join(__dirname, 'src')},
+        { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['babel?cacheDirectory', 'eslint-loader'], include: path.join(__dirname, 'src')},
         { test: /\.css?$/, loaders: ['style', 'raw'], include: __dirname },
       ],
     },
