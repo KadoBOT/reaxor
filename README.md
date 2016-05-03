@@ -27,17 +27,17 @@ Flow testing:  ``npm run flow``
 ## Folder Structure
 ```
 ..root
+|--dist //production bundle.js will be placed here
 |--src
 	|--components
-		|--Component 1 //Each component have their own folder since they hold individual tests and styles
-    		|--__tests__ //Jest detects folders named this way
-           		App-test.js //Jest test file.
-            App.js //Component file
-            style.css.js //Aphrodite CSS/JS File
-        |--Component 2
-    |--stores
-        Store.js //MobX Store for State Management
-    index.js
+		|--__tests__ //Jest detects folders named this way
+		App.js
+		MyComponent.js
+	|--stores
+		Store.js //MobX Store for State Management
+	|--Styles
+		styles.css.js //aphrodite css/js file
+index.js
 ```
 ## Outros
 Since this is a boilerplate, I won't go deeper on how to use it's features (ie. how to use MobX , Aphrodite or Jest), but you can find pre-configured files inside this project that uses them, so you can get a taste of it. If you want to learn more about them and how to use it, you can click on the links on the top of this page near each package name and description.  
