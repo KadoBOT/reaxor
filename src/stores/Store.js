@@ -1,6 +1,7 @@
 import { autorun, observable, computed } from 'mobx'
 
 class Store {
+  //TODO: write a better autorun
   constructor() {
     autorun(() => console.log('Whenever numClicks changes I log: ', this.numClicks))
   }
