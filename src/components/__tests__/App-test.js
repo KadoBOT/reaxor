@@ -7,7 +7,7 @@ import App from '../App'
 
 const storeProp = {
   name: 'Reaxor',
-  description: 'Hello',
+  description: 'React boilerplate for better state management, styling, testing and cleaner code.',
 }
 
 describe('App', () => {
@@ -21,7 +21,7 @@ describe('App', () => {
     const h3 = TestUtils.findRenderedDOMComponentWithTag(app, 'h3')
 
     expect(h2.textContent).toEqual('Welcome to the Reaxor project!')
-    expect(h3.textContent).toEqual('This project is Hello.')
+    expect(h3.textContent).toEqual('This project is a React boilerplate for better state management, styling, testing and cleaner code.')
 
     jest.runAllTimers()
   })

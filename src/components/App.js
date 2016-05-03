@@ -15,7 +15,7 @@ class App extends React.Component {
     return (
       <div>
         <h2 className={css(styles.red)}>Welcome to the {store.name} project!</h2>
-        <h3 className={css(styles.animate)}>This project is {store.description}.</h3>
+        <h3 className={css(styles.animate)}>This project is a {store.description}.</h3>
         <MyComponent store={store} />
       </div>
     )

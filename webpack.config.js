@@ -12,9 +12,10 @@ if (TARGET === 'start' || !TARGET) {
   module.exports = {
     devtool: 'eval',
     entry: [
+        'react-hot-loader/patch',
+        'babel-polyfill',
         'webpack-dev-server/client?http://' + host + ':' + port,
         'webpack/hot/only-dev-server',
-        'react-hot-loader/patch',
         './src/index',
     ],
     output: {
@@ -41,7 +42,7 @@ if (TARGET === 'start' || !TARGET) {
     },
     module: {
       loaders: [
-        { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['babel?cacheDirectory', 'eslint-loader'], include: path.join(__dirname, 'src')},
+        { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['babel', 'eslint-loader'], include: path.join(__dirname, 'src')},
         { test: /\.css?$/, loaders: ['style', 'raw'], include: __dirname },
       ],
     },
