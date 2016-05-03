@@ -6,8 +6,8 @@ class Store {
     autorun(() => console.log('Whenever numClicks changes I log: ', this.numClicks))
   }
 
-  name = 'Reaxor Store';
-  description = 'Hello World';
+  name = 'Reaxor';
+  description = 'React boilerplate for better state management, styling, testing and cleaner code';
   @observable numClicks = 0;
 
   @computed get oddOrEven() {
