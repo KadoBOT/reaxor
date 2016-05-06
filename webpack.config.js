@@ -57,22 +57,14 @@ if (TARGET === 'build') {
     output: {
       path: path.join(__dirname, 'dist'),
       filename: 'bundle.js',
-      publicPath: '/static/',
     },
     module: {
       loaders: [
-        { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['babel']},
+        { test: /\.jsx?$/, loaders: ['babel']},
         { test: /\.css?$/, loaders: ['style', 'raw'], include: __dirname },
       ],
     },
     progress: true,
-    resolve: {
-      modulesDirectories: [
-        'src',
-        'node_modules',
-      ],
-      extensions: ['', '.json', '.js', '.jsx'],
-    },
     plugins: [
       new CleanWebpackPlugin(path.join(__dirname, 'dist')),
       new webpack.DefinePlugin({
