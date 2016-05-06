@@ -57,11 +57,12 @@ if (TARGET === 'build') {
     output: {
       path: path.join(__dirname, 'dist'),
       filename: 'bundle.js',
-      publicPath: 'http://' + host + ':' + port + '/dist/',
+      publicPath: '/dist/',
     },
     module: {
       loaders: [
         { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['babel']},
+        { test: /\.css?$/, loaders: ['style', 'raw'], include: __dirname },
       ],
     },
     progress: true,
