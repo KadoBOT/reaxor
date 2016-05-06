@@ -60,11 +60,18 @@ if (TARGET === 'build') {
     },
     module: {
       loaders: [
-        { test: /\.jsx?$/, loaders: ['babel']},
+        { test: /\.jsx?$/, exclude: /node_modules/, loaders: ['babel']},
         { test: /\.css?$/, loaders: ['style', 'raw'], include: __dirname },
       ],
     },
     progress: true,
+    resolve: {
+      modulesDirectories: [
+        'src',
+        'node_modules',
+      ],
+      extensions: ['', '.json', '.js', '.jsx'],
+    },
     plugins: [
       new CleanWebpackPlugin(path.join(__dirname, 'dist')),
       new webpack.DefinePlugin({
