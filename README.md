@@ -21,9 +21,9 @@ npm install
 ## Usage
 Development Build:  ``npm start``  
 Production Build: ``npm run build``  
-Testing: ``npm test``  
+Testing: ``npm test`` or ``npm run test:watch`` for watching file change or ``npm run test:coverage`` for showing test coverage
 Lint checking: ``npm run lint``  
-Flow testing:  ``npm run flow``  
+Flow testing:  ``npm run typecheck``  
 ## Folder Structure
 ```
 ..root
