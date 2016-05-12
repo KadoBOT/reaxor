@@ -1,11 +1,24 @@
 {
   "presets": ["es2015-loose", "react", "stage-1"],
+  "env": {
+    "development":{
+      "plugins": [
+        "react-hot-loader/babel",
+      ],
+    },
+    "production": {
+      "plugins": [
+        "transform-react-constant-elements",
+        "transform-react-display-name",
+        "transform-react-inline-elements",
+        "transform-react-remove-prop-types",
+      ]
+    }
+  },
   "plugins": [
-    "react-hot-loader/babel",
     "transform-decorators-legacy",
     "transform-flow-strip-types",
     "transform-object-assign",
-    "transform-react-display-name",
     "transform-runtime",
     "typecheck",
   ]

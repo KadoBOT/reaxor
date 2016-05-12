@@ -1,26 +1,40 @@
-import React from 'react'
-import { css } from 'aphrodite'
-import {styles} from '../styles/styles.css'
+// @flow
+
+import React, {PropTypes} from 'react'
+import { css, StyleSheet } from 'aphrodite'
+// import {styles} from '../styles/styles.css'
 import { observer } from 'mobx-react'
 
-const MyComponent = ({ store }) => {
-  const clickButton = store.clickButton
+const styles = StyleSheet.create({
+    odd: {
+      color: 'white',
+      background: 'blue',
+    },
+
+    even: {
+      color: 'blue',
+      background: 'white',
+    },
+})
+
+const MyComponent = ({store}) => {
+  const {clickButton, numClicks, oddOrEven} = store
   return (
-    <div>
+    <div className="MyComponent">
       <button
         onClick={clickButton}
         type="button"
       >
         Click me!
       </button>
-      <h4>You've clicked the button {store.numClicks} times!</h4>
-      <h5>You've clicked button an <span className={css(styles[store.oddOrEven])}>{store.oddOrEven}</span> number of times.</h5>
+      <h4>You've clicked the button {numClicks} times!</h4>
+      <h5>You've clicked button an <span className={css(styles[oddOrEven])}>{oddOrEven}</span> number of times.</h5>
     </div>
   )
 }
 
 MyComponent.propTypes = {
-  store: React.PropTypes.object,
+  store: PropTypes.object,
 }
 
 export default observer(MyComponent)

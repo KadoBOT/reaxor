@@ -55,6 +55,7 @@ module.exports = {
     "max-len": [1, 140, 2],
 
     "max-nested-callbacks": [1, 4],
+    "no-console": ["error", { allow: ["warn", "error"] }],
     "no-mixed-spaces-and-tabs": [2, "smart-tabs"],
     "no-trailing-spaces": 1,
     "no-use-before-define": 2,
@@ -83,8 +84,8 @@ module.exports = {
     "react/jsx-uses-react": 1,
     "react/jsx-uses-vars": 1,
     "react/no-danger": 1,
-    "react/no-direct-mutation-state": 1,
     "react/no-did-mount-set-state": 1,
+    "react/no-direct-mutation-state": 1,
     "react/no-did-update-set-state": 1,
     "react/no-multi-comp": 1,
     "react/no-set-state": 1,

@@ -1,10 +1,14 @@
-import { autorun, observable, computed } from 'mobx'
+import { observable, computed } from 'mobx'
 
 class Store {
-  //TODO: write a better autorun
-  constructor() {
-    autorun(() => console.log('Whenever numClicks changes I log: ', this.numClicks))
-  }
+  //Autorun is a function from MobX that runs everytime that something inside is
+  //updated. In the example below, everytime 'numClicks' is updated, autorun will run
+  //the console.warn
+  //
+  // import {autorun} from 'mobx'
+  // constructor() {
+  //   autorun(() => console.warn('MobX autorun - Whenever numClicks has it value updated, console.log runs: ', this.numClicks))
+  // }
 
   name = 'Reaxor';
   description = 'React boilerplate for better state management, styling, testing and cleaner code';

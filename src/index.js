@@ -23,7 +23,7 @@ if(process.env.NODE_ENV === 'development') {
 
 render(
   <AppContainer>
-    <App store={{ store }} />
+    <App store={store} />
   </AppContainer>,
   document.getElementById('root')
 )
@@ -33,7 +33,7 @@ if (module.hot) {
     let AppNext = require('./components/App').default
     render(
       <AppContainer>
-        <AppNext store={{ store }} />
+        <AppNext store={store} />
       </AppContainer>,
       document.getElementById('root')
     )
