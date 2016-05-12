@@ -31,12 +31,10 @@ Flow testing:  ``npm run flow``
 |--src
 	|--components
 		|--__tests__ //Jest detects folders named this way
-		App.js
+		App.js //with inline css (by Aphrodite)
 		MyComponent.js
 	|--stores
 		Store.js //MobX Store for State Management
-	|--Styles
-		styles.css.js //aphrodite css/js file
 index.js
 ```
 ## Outros
