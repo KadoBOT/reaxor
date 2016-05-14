@@ -5,6 +5,7 @@ import Redbox from 'redbox-react'
 import a11y  from 'react-a11y'
 import Store from './stores/Store'
 import App from './components/App'
+import {whyDidYouUpdate} from 'why-did-you-update'
 
 const store = new Store()
 
@@ -19,6 +20,9 @@ consoleErrorReporter.propTypes = {
 
 if(process.env.NODE_ENV === 'development') {
   a11y(React)
+  whyDidYouUpdate(React)
+  // You can include and exclude components:
+  // whyDidYouUpdate(React, { include: /^pure/, exclude: /^Connect/ })
 }
 
 render(

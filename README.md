@@ -10,8 +10,11 @@ _Boilerplate for better state management, styling, testing and cleaner code_
 * **Flow**: Type Checker for Javascript (http://flowtype.org/)
 * **ESLint**: Configured to work with React (http://eslint.org)
 * **Aphrodite**: Inline Styles that work (https://github.com/Khan/aphrodite)
-* **Jest**: Painless Javascript unit testing (https://facebook.github.io/jest/)
+* **Enzyme[1] w/ Jest[2]**: Painless Javascript unit testing
+	* [1] (http://airbnb.io/enzyme/)
+	* [2] (https://facebook.github.io/jest/)
 * **React Hot Loader 3**: Hot Loader for stateless components (https://github.com/gaearon/react-hot-boilerplate/pull/61)
+* **Why did you update**: no more unnecessary re-renders (https://github.com/garbles/why-did-you-update)
 
 ## Installation
 ```
